@@ -1,0 +1,78 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #01000f;
+    margin: 0;
+    padding: 0;
+    font-family: Tahoma, sans-serif;
+    color: #E0E0CE;
+}
+
+h1 {
+    margin: 0;  /* Remove default margin around h1 */
+    font-size: 2rem;
+}
+
+/* Title container (h1 + icon) */
+.title-container {
+    display: flex;
+    align-items: center;  /* Vertically center the icon and title */
+    justify-content: center;  /* Horizontally center the title and icon */
+    gap: 10px;  /* Space between the icon and the title */
+    margin-top: 20px;  /* Add some margin at the top of the body */
+    padding-bottom: 15px;
+}
+
+/* Icon next to the header title */
+.header-icon {
+    width: 50px;  /* Set the icon width */
+    height: 50px; /* Set the icon height */
+}
+
+/* Gallery Styles */
+.gallery {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    padding: 10px;
+}
+
+/* Each Image Wrapper */
+.image-item {
+    width: 100%;  /* Ensure the image takes up a large portion of the container */
+    max-width: 700px;  /* Larger max-width on desktop */
+    height: auto;  /* Keep aspect ratio */
+    justify-content: center; align-items: center;
+    padding-bottom: 40px;
+}
+
+.image-item .image-wrapper {
+    box-shadow: 6px 6px rgb(0, 0, 0);
+    border-radius: 5px;
+}
+
+/* Image Styles */
+.image-item img {
+    width: 100%;  /* Make image responsive to its container */
+    height: auto;  /* Maintain aspect ratio */
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+/* Mobile Friendly: Adjustments for smaller screens */
+@media (max-width: 768px) {
+    .gallery .image-item {
+        width: 90%;  /* Use full width on smaller screens */
+        max-width: none;  /* No max-width on smaller screens */
+    }
+}
+
+/* Larger Images on Desktop */
+@media (min-width: 1024px) {
+    .gallery .image-item {
+        width: 100%;
+        max-width: 900px;  /* Set a higher max-width for larger displays */
+    }
+}
