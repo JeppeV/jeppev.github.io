@@ -42,7 +42,6 @@ h1 {
 /* Each Image Wrapper */
 .image-item {
     width: 100%;  /* Ensure the image takes up a large portion of the container */
-    max-width: 700px;  /* Larger max-width on desktop */
     height: auto;  /* Keep aspect ratio */
     justify-content: center; align-items: center;
     padding-bottom: 40px;
@@ -73,6 +72,6 @@ h1 {
 @media (min-width: 1024px) {
     .gallery .image-item {
         width: 100%;
-        max-width: 900px;  /* Set a higher max-width for larger displays */
+        max-width: 1200px;  /* Set a higher max-width for larger displays */
     }
 }
